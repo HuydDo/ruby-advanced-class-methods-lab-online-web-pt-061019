@@ -8,7 +8,11 @@ class Song
   end
 
   def save
+<<<<<<< HEAD
    # self in the save method is our new instance
+=======
+    # self in the save method is our new instance
+>>>>>>> a7cdb26a045ebc61f789e33e431c26c08fc01213
    # self.class is Song
    # self.class.all == Song.all
     self.class.all << self
@@ -24,6 +28,10 @@ class Song
     song = self.new
     song.name = name
     song
+<<<<<<< HEAD
+=======
+      #  binding.pry
+>>>>>>> a7cdb26a045ebc61f789e33e431c26c08fc01213
   end
 
   def self.create_by_name(name)
@@ -49,6 +57,7 @@ class Song
 
   def self.alphabetical
     @@all.sort_by{|song| song.name}
+<<<<<<< HEAD
   end
 
   def self.new_from_filename(filename)
@@ -72,6 +81,15 @@ class Song
     song.artist_name = artist_name
     @@all << song
     # binding.pry
+=======
+    # binding.pry
+  end
+
+  def self.new_from_filename(filename)
+  end
+
+  def self.create_file_filename(filename)
+>>>>>>> a7cdb26a045ebc61f789e33e431c26c08fc01213
   end
 
   def self.destroy_all
